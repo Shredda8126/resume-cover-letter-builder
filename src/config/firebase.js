@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB30aRXjg4QaKJpt1hKOwOmJpHYK4CsV8w",
-  authDomain: "resume-cover-letter-builder.firebaseapp.com",
-  projectId: "resume-cover-letter-builder",
-  storageBucket: "resume-cover-letter-builder.firebasestorage.app",
-  messagingSenderId: "1082760438005",
-  appId: "1:1082760438005:web:a95ec3bee811daa991a5bc"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
